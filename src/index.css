@@ -44,3 +44,21 @@
   transition-duration: 1s;
   transform: scale(1.08);
 }
+
+.slider-button-left,
+.slider-button-right {
+  position: absolute;
+  /* background: transparent; */
+  /* border: none; */
+  /* outline: none; */
+  font-size: 4rem;
+  color: #eee;
+  padding: 0 1rem;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+}
+
+.slider-button-left:hover,
+.slider-button-right:hover {
+  transform: scale(0.95);
+}

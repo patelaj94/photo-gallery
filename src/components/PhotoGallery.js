@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import 'font-awesome/css/font-awesome.min.css';
 
 
 const PhotoGallery = ({pics}) => {
@@ -16,13 +17,13 @@ const PhotoGallery = ({pics}) => {
 
     return (
         
-        <section className="slider">
-            <button onClick={previous} className="slider__btn-left">
-                    <i className="fas fa-angle-left"></i>
+        <div className="slider">
+            <button onClick={previous} className="left-arrow">
+                    <i className="fa fa-angle-left"></i>
             </button>
 
-            <button onClick={next} className="slider__btn-right">
-                    <i className="fas fa-angle-right"></i>
+            <button onClick={next} className="right-arrow">
+                    <i className="fa fa-angle-right"></i>
             </button>
 
             {
@@ -37,7 +38,7 @@ const PhotoGallery = ({pics}) => {
                     );
                 })
             }
-        </section>
+        </div>
     );
 };
 
