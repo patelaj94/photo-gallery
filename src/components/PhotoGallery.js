@@ -17,7 +17,7 @@ const PhotoGallery = ({pics}) => {
 
     return (
         
-        <div className="slider">
+        <div>
             <button onClick={previous} className="left-arrow">
                     <i className="fa fa-angle-left"></i>
             </button>

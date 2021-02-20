@@ -1,16 +1,24 @@
+.image {
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* .image {
+  height: 600px;
+  width: 1000px;
+  border-radius: 10px;
+}
+
 .slider {
   position: relative;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.image {
-  width: 1000px;
-  height: 600px;
-  border-radius: 10px;
-}
+} */
 
 .right-arrow {
   position: absolute;
@@ -43,22 +51,4 @@
   opacity: 1;
   transition-duration: 1s;
   transform: scale(1.08);
-}
-
-.slider-button-left,
-.slider-button-right {
-  position: absolute;
-  /* background: transparent; */
-  /* border: none; */
-  /* outline: none; */
-  font-size: 4rem;
-  color: #eee;
-  padding: 0 1rem;
-  cursor: pointer;
-  transition: transform 0.1s ease-in-out;
-}
-
-.slider-button-left:hover,
-.slider-button-right:hover {
-  transform: scale(0.95);
 }
