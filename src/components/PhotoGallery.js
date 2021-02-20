@@ -1,7 +1,15 @@
 import React from 'react';
 
-const PhotoGallery = () => {
-    return <div>Images</div>
+const PhotoGallery = ({pics}) => {
+    return (
+        <>
+            {pics.map((pic, index) => {
+                return (
+                    <img src={pic.url} alt="" />
+                )
+            })}
+        </>
+    )
 }
 
 export default PhotoGallery;
