@@ -15,8 +15,9 @@ const PhotoGallery = ({pics}) => {
         setCurrent(current === 0 ? slideCounter - 1 : current - 1)
     };
 
+    
     return (
-        
+       
         <div>
             <button onClick={previous} className="left-arrow">
                     <i className="fa fa-angle-left"></i>
@@ -26,18 +27,10 @@ const PhotoGallery = ({pics}) => {
                     <i className="fa fa-angle-right"></i>
             </button>
 
-            {
-                pics.map((pic, index) => {
-                    return (
-                        <div className={index === current ? 'slide active' : 'slide'}
-                            key={index}>
-                                {index === current && (
-                                    <img src={pic.url} alt='travel image' className='image' />
-                                )}
-                        </div>
-                    );
-                })
-            }
+            <div className={'slide-active'}>
+                <img src={pics[current].url} className='image' />
+                <div className={'slide-text'}>{pics[current].caption}</div>
+            </div>
         </div>
     );
 };

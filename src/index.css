@@ -20,6 +20,20 @@
   align-items: center;
 } */
 
+
+
+.slide-text {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1.3rem;
+  /* color: #000; */
+  margin: 1rem 0;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .right-arrow {
   position: absolute;
   top: 50%;
@@ -42,13 +56,11 @@
   user-select: none;
 }
 
-.slide {
-  opacity: 0;
-  transition-duration: 1s ease;
-}
-
-.slide.active {
+.slide-active {
   opacity: 1;
-  transition-duration: 1s;
+  transition-duration: 1s ease;
   transform: scale(1.08);
+  position: relative;
+  text-align: center;
+  color: white;
 }
