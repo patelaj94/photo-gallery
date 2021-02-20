@@ -5,7 +5,7 @@ export default [
         caption: 'The Watchman, Zion National Park'
     },
     {
-        url: 'https://i0.hippopx.com/photos/769/538/351/landscape-scenic-water-reflection-preview.jpg',
+        url: 'https://live.staticflickr.com/65535/50437219378_091fda306f_b.jpg',
         caption: 'Rocky Mountain National Park'
     },
     {

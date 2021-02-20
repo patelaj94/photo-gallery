@@ -29,7 +29,7 @@ const PhotoGallery = ({pics}) => {
 
             <div className={'slide-active'}>
                 <img src={pics[current].url} className='image' />
-                <div className={'slide-text'}>{pics[current].caption}</div>
+                <div className={'slide-text'}><b>{pics[current].caption}</b></div>
             </div>
         </div>
     );
