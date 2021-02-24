@@ -2,7 +2,8 @@
 
 ## Running the application
   1. clone this repository into your local
-  2. npm start
+  2. npm install
+  3. npm start
   
   - Use: Add image urls and captions in the pics.js class as desired.
 
